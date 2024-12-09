@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Kanit", sans-serif;
+}
+
+/* Header do Site */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 15px 0px 15px;
+  height: 80px;
+  background: #F6F6F7;
+}
+
+nav {
+  gap: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  font-weight: 500px;
+}
+
+li a {
+  color: #181818;
+  text-decoration: none;
+
+}
+
+.ct {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 15px 60px;
+  margin-right: 124px;
+  border-radius: 10px;
+  background: #F41E1E;
+  color: #F1F1F1;
+  text-decoration: none;
+  transform: skewX(-15deg);
+  transition: 0.4s;
+  border: none;
+}
+
+.ct:hover {
+  background: #181818;
+  transform: skewX(15deg);
+}
+
+.ct span {
+  transform: skewX(15deg);
+  display: inline-block;
+  transition: 0.4s;
+}
+
+.ct span.ativo {
+  transform: skewX(-15deg);
+  display: inline-block;
+}
+
+/* Seção Inicio do Site */
+
+section#inicio {
+  background: url(./assets/imgs/Fundo\ Academia.jpeg) no-repeat;
+  background-size: cover;
+  height: 880px;
+  position: relative;
+}
+
+article {
+  display: flex;
+  background: #181818;
+  width: 80%;
+  height: 100%;
+  transform: skewX(-25deg);
+  position: relative;
+  left: -400px;
+}
+
+div.article {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  row-gap: 40px;
+  top: 200px;
+  align-items: start;
+  margin-left: 200px;
+}
+
+ul#ulSemLimites {
+  position: relative;
+  list-style-type: square;
+  color: #F41E1E;
+}
+
+li#semLimites::marker {
+  list-style-type: square;
+  color: #F41E1E;
+  font-size: 20px;
+}
+
+ul li#semLimites {
+  font-size: 128px;
+  color: transparent;
+  -webkit-text-stroke: 1px #F1F1F1;
+  text-transform: uppercase;
+  height: 160px;
+  min-height: 160px;
+}
+
+.textoSemLimites {
+  color: #F1F1F1;
+  text-align: start;
+  line-height: 18px;
+}
+
+div.article .ct:hover {
+  background: #F1F1F1;
+  transform: skewX(15deg);
+  color: #181818;
+}
+
+
+.section2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+  text-align: center;
+  background: #efefef;
+  height: 100vh;
+}
+
+.section2 .imgSobre img {
+  width: 300px;
+  border-radius: 15px;
+}
+
+.section2 .textoSobre {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: left;
+}
+
+.section2 .textoSobre h5 {
+  color: #f41e1e;
+  padding: 5px;
+  background: white;
+  border-radius: 10px;
+  width: 80px;
+  text-align: center;
+}
+
+.section2 .textoSobre h1 {
+  font-size: 25px;
+}
+
+.section2 .textoSobre h1 span {
+  color: #f41e1e;
+}
+
+.section2 .textoSobre p {
+  max-width: 500px;
+  color: #7B7E86;
+}
+.section2 .textoSobre .ct{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  background: #F41E1E;
+  color: #F1F1F1;
+  width: 200px;
+  text-decoration: none;
+  transform: skewX(-15deg);
+  transition: 0.4s;
+  border: none;
+}
+.section2 .textoSobre .ct:hover {
+  background: #181818;
+  transform: skewX(15deg);
+}
+
+.section3 {
+  display: flex;
+  background: black fixed;
+  height: 40vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.section3 .imgsQualidades {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  color: white;
+}
+
+.section3 .imgsQualidades img {
+  width: 80px;
+  border-radius: 100px;
+}
